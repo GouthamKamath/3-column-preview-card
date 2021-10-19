@@ -1,0 +1,163 @@
+
+body{
+    background: whitesmoke;
+    box-sizing: border-box;
+    margin: 0;
+}
+
+h2{
+    font-family: 'Big Shoulders Display',sans-serif;
+    font-size: 35px;
+    margin: 40px 20px;
+    text-transform: uppercase;
+}
+
+p{
+    font-family: 'Lexend Deca',sans-serif;
+    font-size: 12px;
+    height: 120px;
+    line-height: 20px;
+    margin: 40px auto;
+    position: relative;
+    width: 80%;
+    word-spacing: 0px;
+}
+
+/* classes */
+.preview-cards{
+    margin: 0px auto;
+    position: absolute;
+    padding: 0;
+    top: 120px;
+    width: 75vw;
+}
+.sedans{
+    background: orange;
+    border-radius: 10px 0px 0px 10px;
+    color: rgba(230, 230, 230, 0.883);
+    height: 400px;
+    left: 30%;
+    padding: 25px;
+    position: absolute;
+    width: 20%;
+}
+.suvs{
+    background: rgb(75, 190, 219);
+    border-radius: 0px;
+    color: rgba(230, 230, 230, 0.883);
+    height: 400px;
+    left: 54%;
+    padding: 25px;
+    position: absolute;
+    top: 0px;
+    width: 20%;
+}
+.luxury{ 
+    background: rgb(42, 105, 86);
+    border-radius: 0px 10px 10px 0px;
+    color: rgba(230, 230, 230, 0.883);
+    height: 400px;
+    left: 78%;
+    position: relative;
+    padding: 25px;
+    top: 0px;
+    width: 20%;
+}
+
+/* Icon image */
+.icon-img{
+    margin: 0px 20px;
+}
+
+/* button */
+ .learn-more-btn{
+    border: 1px solid white;;
+    border-radius: 40px;
+    color: orange;
+    cursor: pointer;
+    font-family: 'Lexend Deca',sans-serif;
+    margin: 20px 20px;
+    padding: 12px;
+    width: 120px;
+    height: 40px;
+}
+
+.learn-more-btn:hover{
+    color: white;
+    background-color: orange;
+}
+
+.suvs .learn-more-btn{
+    color: rgb(75, 190, 219);
+}
+.suvs .learn-more-btn:hover{
+    color: white;
+    background-color: rgb(75, 190, 219);
+}
+
+.luxury .learn-more-btn{
+    color: rgb(42, 105, 86);
+}
+
+.luxury .learn-more-btn:hover{
+    color: white;
+    background-color: rgb(42, 105, 86);
+}
+/* media queries */
+
+@media screen and (max-width: 600px) {
+
+    body{
+        box-sizing: border-box;
+        overflow-x: hidden;
+        position: absolute;
+    }
+    h2{
+        margin: 15px 40px; 
+    }
+    p{   
+        font-size: 15px;
+        height: 120px;
+        line-height: 15px;
+        margin: 0px 40px;
+        width: 75%;
+    }
+
+    .preview-cards{
+        height: 150vh;
+        margin: 0px 50px;   
+        position: relative;
+        width: 80vw;
+    }
+    .sedans{
+        border-radius: 10px;
+        height: 350px;
+        left: 0px;
+        margin: 0px 8px;
+        position: relative;
+        width: 80%;
+    }
+    .suvs{
+        border-radius: 10px;
+        height: 350px;
+        left: 0px;
+        margin: 0px 8px;
+        position: relative;
+        width: 80%;
+    }
+    .luxury{
+        border-radius: 10px;
+        height: 350px;
+        left: 0px;
+        margin: 0px 8px;
+        position: relative;
+        width: 80%;
+    }
+    /* Icon image */
+    .icon-img{
+        margin: 20px 40px;
+    }
+    .learn-more-btn{
+        margin: 45px 30px;
+    }
+  }
